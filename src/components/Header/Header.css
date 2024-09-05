@@ -1,0 +1,61 @@
+.header {
+    height: 60vh;
+    margin: 20px auto;
+    background: url('/header_img.png') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.header-text {
+    color: #fff;
+    padding: 10px 20px;
+    max-width: 80%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transition: background 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+.header-contents button {
+    padding: 10px 20px;
+    background-color: #fcfbfb;
+    color: #7d7777;
+    border-radius: 70px;
+    border: none; /* Remove the default button border */
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer; /* Change the cursor to pointer on hover */
+    font-size: 16px; /* Set a consistent font size */
+    outline: none; /* Remove outline on button */
+}
+
+.header-contents button:hover {
+    background-color: rgb(253, 71, 39);
+}
+
+.header:hover .header-text {
+    background: rgba(222, 44, 44, 0.7);
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: 70vh;
+        margin: 30px auto;
+        padding-top: 20px;
+    }
+    
+    /* Ensure the button styling remains consistent on smaller screens */
+    .header-contents button {
+        font-size: 16px; /* Keep the font size constant */
+        padding: 10px 20px; /* Keep the padding constant */
+    }
+}
